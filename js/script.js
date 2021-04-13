@@ -63,3 +63,21 @@ for (var i = 0; i < students.length; i++) {
     console.log('Nome: ', alumn.nome);
     console.log('Cognome: ', alumn.cognome);
 }
+
+/*****************
+ * ESERCIZIO 3
+ *****************/
+
+// Refs
+var newStudent = {};
+
+// Inserimento dei dati del nuovo studente da parte dell'utente
+newStudent.nome = prompt('Inserisci il nome dello studente').trim();
+newStudent.cognome = prompt('Inserisci il cognome dello studente').trim();
+newStudent.eta = prompt('Inserisci l\' età dello studente').trim();
+
+// Inserimento del nuovo studente nell'array students
+students.push(newStudent);
+
+// Stampo il contenuto del'array students
+console.log(students);
