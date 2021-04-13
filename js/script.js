@@ -20,7 +20,46 @@ var student = {
     age: 80,
 }
 
+console.log('---- ESERCIZIO 1 ----');
+
 // Iterazione per stampare le proprietà dell'oggetto
 for (key in student) {
     console.log(key + ':', student[key]);
+}
+
+/*****************
+ * ESERCIZIO 2
+ *****************/
+
+// Ref
+var students = [
+    {
+        nome: 'Carcarlo',
+        cognome: 'Pravettoni',
+        eta: 66,
+    },
+    {
+        nome: 'Piergiacomo',
+        cognome: 'Rosetta',
+        eta: 21,
+    },
+    {
+        nome: 'Gastani',
+        cognome: 'Frinzi',
+        eta: 16,
+    },
+    {
+        nome: 'Filippo',
+        cognome: 'Giallini',
+        eta: 35,
+    },
+];
+
+console.log('---- ESERCIZIO 2 ----');
+
+// Iterazione per stampare nome e cognome degli studenti
+for (var i = 0; i < students.length; i++) {
+    var alumn = students[i];
+    console.log('Nome: ', alumn.nome);
+    console.log('Cognome: ', alumn.cognome);
 }
