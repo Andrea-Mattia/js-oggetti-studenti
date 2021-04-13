@@ -8,3 +8,43 @@
 body {
     font-family: sans-serif;
 }
+
+/* UTILITY */
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: gold;
+    border: 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #736620;
+}
+
+/* APP */
+.app {
+    min-height: 100vh;
+    background: lightskyblue;
+}
+
+.ex-1,
+.ex-2,
+.ex-3 {
+    max-width: 500px;
+}
+
+div:not(.app) {
+    margin: 1rem 0;
+}
