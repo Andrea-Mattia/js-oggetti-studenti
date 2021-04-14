@@ -27,7 +27,7 @@ $(document).ready(function () {
         }
 
         // Iterazione per stampare le proprietà dell'oggetto
-        for (key in student) {
+        for (var key in student) {
             var result1 = $('.ex-1 .result');
             result1.append(key + ': ' + student[key] + '<br>');
         }
